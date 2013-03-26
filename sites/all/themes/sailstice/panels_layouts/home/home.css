@@ -1,0 +1,40 @@
+
+
+.panel-home { 
+/*  overflow: hidden;  */
+  margin-top: 0;
+  padding-top: 0;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.panel-home .panel   {
+
+}
+
+.panel-home .row {
+    clear:both;
+
+}
+
+#panel-hero {
+    float:right;
+    width:66%;
+}
+
+#panel-hero-right {
+    float:right;
+    width:33%;
+}
+
+.panel.sub {
+    float: left;
+    width: 33%;
+}
+
+.panel-home .row {
+
+    margin-bottom:20px;
+
+}

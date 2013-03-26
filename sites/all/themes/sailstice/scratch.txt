@@ -1,0 +1,40 @@
+
+
+
+// From my template file.
+
+function sailstice_theme() {
+  return array(
+    // The form ID.
+    'user_login_block' => array(
+      // Forms always take the form argument.
+      'variables' => array('form' => NULL),
+    ),
+  );
+}
+
+/**
+ * Theme override for user login block.
+ *
+ * The function is named themename_formid.
+ */
+function sailstice_user_login_block($form) {
+  $form['name']['#title'] = t('your username'); //wrap any text in a t function
+  unset($form['links']['#value']); //remove links under fields
+  return (drupal_render($form));
+}
+
+
+function sailstice_preprocess_user_picture(&$vars) {
+  // a successful example of adding to template_preprocess_user_picture from user.module
+
+  $vars['edit_picture'] = '';
+  if ($vars['account']->uid == $vars['user']->uid) {
+    // user viewing the page is the same as the account of the author
+    $vars['edit_picture'] = l('Change Picture', 'user/' . $vars['account']->uid . '/edit', array(
+        'fragment'=>'edit-picture',
+        'attributes'=>array('class' => array('change-user-picture'))
+      )
+    );
+  }
+}
