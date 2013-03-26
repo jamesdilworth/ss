@@ -179,5 +179,5 @@
   </div>
 </div>
 
-
+<div class="note">This is a test</div>
 <?php print render($page['debug']); ?>
