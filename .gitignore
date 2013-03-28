@@ -21,6 +21,10 @@
 *.zip
 *.tgz
 
+# PHPStorm Config Files #
+#########################
+/.idea/*
+
 # Logs and databases #
 ######################
 *.log
