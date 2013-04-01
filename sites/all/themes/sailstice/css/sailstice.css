@@ -14,10 +14,25 @@
 #page                   { padding:10px 20px;}
 
 .sidebar .block,
-.sidebar .panel-pane    { background-color:#f0f8fb; padding:15px; box-shadow:inset 0px 0px 50px #d5e8f1; -webkit-box-shadow:inset 0px 0px 50px #d5e8f1; }
+.sidebar .panel-pane    { background-color:#f0f8fb; padding:15px; margin-bottom:10px; box-shadow:inset 0px 0px 50px #d5e8f1; -webkit-box-shadow:inset 0px 0px 50px #d5e8f1; }
 
 .sidebar .block,
 .sidebar .panel-pane h2 { margin-top:0px; }
+
+.event-summary             { padding-bottom:5px; margin-bottom:10px; border-bottom:1px dashed #dbeaf0; }
+.event-summary h3          { margin-bottom:0px; }
+
+.mainpane .article-summary           { margin-bottom:20px; }
+.mainpane .article-summary h2        { margin-bottom:0px; font-family:Helvetica, sans-serif; }
+.mainpane .article-summary h2+p      { margin-top:5px; }
+
+.sidebar .article-summary            { padding-bottom:5px; margin-bottom:10px; border-bottom:1px dashed #dbeaf0; }
+.sidebar .article-summary .pub-date  { font-size:90%; color:#666;}
+
+
+.sidebar .new-user          { margin-bottom:10px; overflow:auto; }
+.sidebar .new-user .picture { float:left; margin-right:10px; }
+.sidebar .new-user .picture img { width:80px; }
 
 .blue-box               { background-color:#f0f8fb; padding:15px; box-shadow:inset 0px 0px 50px #d5e8f1; -webkit-box-shadow:inset 0px 0px 50px #d5e8f1; }
 

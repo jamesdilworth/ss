@@ -224,6 +224,19 @@ $databases = array (
       'prefix' => '',
     ),
   ),
+  'summsail' =>
+  array (
+    'default' =>
+    array (
+      'database' => 'summsail',
+      'username' => 'root',
+      'password' => 'jaymz0',
+      'host' => 'localhost',
+      'port' => '',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
 );
 
 /**
@@ -565,3 +578,22 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
+
+if(isset($_SERVER['PANTHEON_ENVIRONMENT'])) {
+  switch($_SERVER['PANTHEON_ENVIRONMENT']) {
+    case 'dev' :
+      $conf['environment_indicator_text'] = 'PANTHEON DEV';
+      $conf['environment_indicator_color'] = '#ff0000';
+      break;
+    default :
+      $conf['environment_indicator_text'] = 'UNKNOWN';
+      $conf['environment_indicator_color'] = '#00ff00';
+  }
+} elseif ($_SERVER['SERVER_NAME'] == 'drupal.sailstice.dev') {
+  $conf['environment_indicator_text'] = 'LOCAL';
+  $conf['environment_indicator_color'] = '#6666ff';
+} else {
+  $conf['environment_indicator_text'] = 'UNKNOWN';
+  $conf['environment_indicator_color'] = '#00ff00';
+
+}

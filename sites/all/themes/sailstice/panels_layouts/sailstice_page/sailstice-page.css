@@ -1,0 +1,26 @@
+
+.sailstice_page { 
+/*  overflow: hidden;  */
+}
+
+.sailstice_page .panel.mainpane {
+  float: right;
+  width:70%
+}
+
+.sailstice_page .panel.sidebar {
+    max-width: 25%;
+    float:left;
+    margin-left:0px;
+    margin-right:30px;
+}
+
+.sidebar_on_right .sailstice_page .panel.main {
+    float: left;
+}
+
+.sidebar_on_right .sailstice_page .panel.sidebar {
+    float:right;
+    margin-left:30px;
+    margin-right:0px;
+}
