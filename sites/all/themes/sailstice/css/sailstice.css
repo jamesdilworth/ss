@@ -101,14 +101,14 @@
 .prize .sponsor_logo .logo { text-align:center; }
 
 /* Small Prize cards used on the event page display */
-.view-display-id-mini_cards                 { text-align:left; margin-left:-10px; }
-.view-display-id-mini_cards .view-footer    { margin-left:10px; margin-top:-10px; }
-.view-display-id-mini_cards .prize          { width:200px; padding:0px; }
-.view-display-id-mini_cards .prize .image   { max-height:150px; margin:0px; }
-.view-display-id-mini_cards .prize .title,
-.view-display-id-mini_cards .prize .sponsor { position:relative; bottom:0px; background-color:#1b7fa9; color:#e6e6e6; padding:4px 10px 4px; }
-.view-display-id-mini_cards .prize .title   {  }
-.view-display-id-mini_cards .prize .sponsor a { color:#fff; text-decoration:none;  }
+.mini-cards                 { text-align:left; margin-left:-10px; }
+.mini-cards .view-footer    { margin-left:10px; margin-top:-10px; }
+.mini-cards .prize          { width:200px; padding:0px; }
+.mini-cards .prize .image   { max-height:150px; margin:0px; }
+.mini-cards .prize .title,
+.mini-cards .prize .sponsor { position:relative; bottom:0px; background-color:#1b7fa9; color:#e6e6e6; padding:4px 10px 4px; }
+.mini-cards .prize .title   {  }
+.mini-cards .prize .sponsor a { color:#fff; text-decoration:none;  }
 
 /* Event Page */
 .event-page             {}
