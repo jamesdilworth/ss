@@ -110,6 +110,8 @@
 .mini-cards .prize .title   {  }
 .mini-cards .prize .sponsor a { color:#fff; text-decoration:none;  }
 
+.sidebar .mini-cards .prize { width:260px; }
+
 /* Event Page */
 .event-page             {}
 .event-page .date-time  { font-size:120%; border-radius:5px; }
