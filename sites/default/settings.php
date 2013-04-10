@@ -556,6 +556,13 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 # $conf['proxy_exceptions'] = array('127.0.0.1', 'localhost');
 
 /**
+ * Config settings for re-route email
+ *
+ * */
+$conf['reroute_email_enable'] = 1;
+$conf['reroute_email_address'] = "info2@dilworth.org";
+
+/**
  * Authorized file system operations:
  *
  * The Update manager module included with Drupal provides a mechanism for
@@ -597,3 +604,13 @@ if(isset($_SERVER['PANTHEON_ENVIRONMENT'])) {
   $conf['environment_indicator_color'] = '#00ff00';
 
 }
+
+
+/**
+ * Turn on Error Reporting - James : Apr 10
+ * From DGD7 Book p463
+ * */
+error_reporting(-1);
+$conf['error_level'] = 2;
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
