@@ -1,5 +1,14 @@
+/**
+ * @file
+ * Content Styles
+ * This file is picked up by the TinyMCE editor to make styles available to the editor. Equally, it is also used for output of basic styles.
+ */
 
-h1      { font-size:150%; color:blue; }
-h2      { font-size:125%; color:red; }
+body {
+    padding:5px;
+}
 
-.highlight  { background-color:ff0;}
+pre {
+    font-size:14px;
+}
+
