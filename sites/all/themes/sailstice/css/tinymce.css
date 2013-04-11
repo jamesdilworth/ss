@@ -1,0 +1,20 @@
+/**
+ * @file
+ * Content Styles
+ * This file is picked up by the TinyMCE editor along with normalize.css to make styles available to the editor.
+ * Configuration under Administration > Configuration > Content Authoring
+ */
+
+body {
+    padding:5px 10px;
+}
+
+pre {
+    font-size:14px;
+}
+
+/* Notes are not visible to public users */
+.sailstice_notes  {
+    display:block; background-color: #ff0;
+}
+

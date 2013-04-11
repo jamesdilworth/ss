@@ -70,7 +70,7 @@
  */
 ?>
 
-
+<?php print render($page['site_banner']); ?>
 
 <div id="full_page"> <?php // used for the background image ?>
   <div id="main-nav">
