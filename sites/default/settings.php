@@ -556,11 +556,11 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 # $conf['proxy_exceptions'] = array('127.0.0.1', 'localhost');
 
 /**
- * Config settings for re-route email
+ * Config settings for re-route email module
  *
  * */
 $conf['reroute_email_enable'] = 1;
-$conf['reroute_email_address'] = "info2@dilworth.org";
+$conf['reroute_email_address'] = "summersailstice_test@mygreenapril.com";
 
 /**
  * Authorized file system operations:
