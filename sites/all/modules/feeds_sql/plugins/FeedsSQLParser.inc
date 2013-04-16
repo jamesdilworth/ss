@@ -45,10 +45,13 @@ class FeedsSQLParser extends FeedsParser {
 
   /**
    * Override parent::getSourceElement() to use only lower keys.
+   * WHY???
+   * This breaks the feeds import if the columns contain uppercase! - jz
    */
-  public function getSourceElement(FeedsSource $source, FeedsParserResult $result, $element_key) {
-    return parent::getSourceElement($source, $result, drupal_strtolower($element_key));
-  }
+
+  // public function getSourceElement(FeedsSource $source, FeedsParserResult $result, $element_key) {
+  //  return parent::getSourceElement($source, $result, drupal_strtolower($element_key));
+  // }
 
   /**
    * Define defaults.

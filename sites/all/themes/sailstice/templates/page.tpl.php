@@ -109,7 +109,7 @@
       <div id="season_date">Saturday, June 22nd 2013</div>
       <div id="tagline_or_slogan">
           <div id="slogan">Celebrate Sailing!</div>
-          <div id="countdown">110 Days to Go</div>
+          <div id="countdown"></div>
       </div>
 
     </header>
@@ -139,9 +139,7 @@
         <?php // print $breadcrumb; ?>
           <a id="main-content"></a>
         <?php print render($title_prefix); ?>
-        <?php if ($title): ?>
-          <h1 class="title" id="page-title"><?php print $title; ?></h1>
-        <?php endif; ?>
+
         <?php print render($title_suffix); ?>
         <?php print $messages; ?>
         <?php print render($tabs); ?>

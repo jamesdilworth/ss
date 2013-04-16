@@ -560,7 +560,7 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  *
  * */
 $conf['reroute_email_enable'] = 1;
-$conf['reroute_email_address'] = "summersailstice_test@mygreenapril.com";
+$conf['reroute_email_address'] = "test@mygreenapril.com";
 
 /**
  * Authorized file system operations:

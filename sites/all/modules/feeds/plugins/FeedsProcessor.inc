@@ -439,6 +439,7 @@ abstract class FeedsProcessor extends FeedsPlugin {
       }
       else {
         $value = $parser->getSourceElement($source, $result, $mapping['source']);
+        feeds_dbg('returned $value is :' . $value . 'from ($mapping[source]) : ' . $mapping['source'] );
       }
 
       // Map the source element's value to the target.
@@ -453,7 +454,9 @@ abstract class FeedsProcessor extends FeedsPlugin {
         $this->setTargetElement($source, $target_item, $mapping['target'], $value, $mapping);
       }
     }
+
     return $target_item;
+
   }
 
   /**

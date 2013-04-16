@@ -50,8 +50,11 @@ class FeedsUserProcessor extends FeedsProcessor {
    * Validates a user account.
    */
   protected function entityValidate($account) {
-    if (empty($account->name) || empty($account->mail) || !valid_email_address($account->mail)) {
-      throw new FeedsValidationException(t('User name missing or email not valid.'));
+    if (empty($account->mail) || !valid_email_address($account->mail)) {
+      throw new FeedsValidationException(t('Email missing or email not valid.'));
+    }
+    if (empty($account->name)) {
+       throw new FeedsValidationException(t('User name missing'));
     }
   }
 
