@@ -223,7 +223,7 @@ $databases = array (
       'driver' => 'mysql',
       'prefix' => '',
     ),
-  )
+  ),
 );
 
 /**
@@ -573,18 +573,10 @@ $conf['reroute_email_address'] = "test@mygreenapril.com";
  */
 # $conf['allow_authorize_operations'] = FALSE;
 
-if ($_SERVER['SERVER_NAME'] == 'www.summersailstice.com' || $_SERVER['SERVER_NAME'] == 'sailstice.dreamhosters.com') {
-  $conf['environment_indicator_text'] = 'LIVE';
-  $conf['environment_indicator_color'] = '#ff9900';
-} elseif ($_SERVER['SERVER_NAME'] == 'drupal.sailstice.dev') {
-  $conf['environment_indicator_text'] = 'LOCAL';
-  $conf['environment_indicator_color'] = '#6666ff';
-} else {
-  $conf['environment_indicator_text'] = 'UNKNOWN';
-  $conf['environment_indicator_color'] = '#00ff00';
 
-}
-
+# This is the live environment, so set the indicator that way!
+$conf['environment_indicator_text'] = 'LIVE';
+$conf['environment_indicator_color'] = '#ff9900';
 
 /**
  * Turn on Error Reporting - James : Apr 10
