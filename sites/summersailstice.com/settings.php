@@ -217,8 +217,8 @@ $databases = array (
     array (
       'database' => 'sailstice_drupal',
       'username' => 'sailstice',
-      'password' => 'sailstice7',
-      'host' => 'mysql.dreamhosters.com',
+      'password' => 'mysqlstice',
+      'host' => 'mysql.sailstice.dreamhosters.com',
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
@@ -573,16 +573,9 @@ $conf['reroute_email_address'] = "test@mygreenapril.com";
  */
 # $conf['allow_authorize_operations'] = FALSE;
 
-if(isset($_SERVER['PANTHEON_ENVIRONMENT'])) {
-  switch($_SERVER['PANTHEON_ENVIRONMENT']) {
-    case 'dev' :
-      $conf['environment_indicator_text'] = 'PANTHEON DEV';
-      $conf['environment_indicator_color'] = '#ff0000';
-      break;
-    default :
-      $conf['environment_indicator_text'] = 'UNKNOWN';
-      $conf['environment_indicator_color'] = '#00ff00';
-  }
+if ($_SERVER['SERVER_NAME'] == 'www.summersailstice.com' || $_SERVER['SERVER_NAME'] == 'sailstice.dreamhosters.com') {
+  $conf['environment_indicator_text'] = 'LIVE';
+  $conf['environment_indicator_color'] = '#ff9900';
 } elseif ($_SERVER['SERVER_NAME'] == 'drupal.sailstice.dev') {
   $conf['environment_indicator_text'] = 'LOCAL';
   $conf['environment_indicator_color'] = '#6666ff';
