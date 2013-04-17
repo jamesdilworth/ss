@@ -1,6 +1,6 @@
 <?php
 
-echo "Test";
+ECHO "Test";
 
 /**
  * @file

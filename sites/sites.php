@@ -55,5 +55,5 @@
  */
 
 $sites['drupal.sailstice.dev'] = 'default';
-$sites['sailstice.dreamhosters.com'] = 'summersailstice.com';
-$sites['www.summersailstice.com'] = 'summersailstice.com';
+$sites['sailstice.dreamhosters.com'] = 'sailstice.dreamhosters.com';
+$sites['www.summersailstice.com'] = 'sailstice.dreamhosters.com';
