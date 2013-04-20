@@ -32,6 +32,7 @@
 .mainpane .article-summary           { margin-bottom:20px; }
 .mainpane .article-summary h2        { margin-bottom:0px; font-family:Helvetica, sans-serif; }
 .mainpane .article-summary h2+p      { margin-top:5px; }
+.mainpane .article-summary .image    { float:left; margin-right:15px; }
 
 .sidebar .article-summary            { padding-bottom:5px; margin-bottom:10px; border-bottom:1px dashed #dbeaf0; }
 .sidebar .article-summary .pub-date  { font-size:90%; color:#666;}
