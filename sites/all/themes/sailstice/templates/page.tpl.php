@@ -105,6 +105,10 @@
       </div>
 
       <div id="logo"><a href="<?php echo $front_page ?>"><img src="/<?php echo $directory ?>/images/boat_logo.png"></a></div>
+      <div id="social">
+        <div class="item"><a href="http://www.facebook.com/summersailstice" target="_blank"><img src="/<?php echo $directory ?>/images/icon_fb.png" alt="FB" title="Follow us on Facebook"></a></div>
+        <div class="item"><a href="http://twitter.com/summersailstice" target="_blank"><img src="/<?php echo $directory ?>/images/icon_twitter.png" alt="Twitter" title="Follow us on Twitter"></a></div>
+      </div>
       <div id="site_name">Summer<br>SAILstice</div>
       <div id="season_date">Saturday, June 22nd 2013</div>
       <div id="tagline_or_slogan">
@@ -173,7 +177,13 @@
   <div class="inner">
     <div id="footer_1"><?php print render($page['footer_1']); ?>&nbsp;</div>
     <div id="footer_2"><?php print render($page['footer_2']); ?>&nbsp;</div>
-    <div id="footer_right"><?php print render($page['footer_right']); ?>&nbsp;</div>
+    <div id="footer_right">
+      <?php print render($page['footer_right']); ?>
+      <div class="social">
+        <div class="item"><a href="http://www.facebook.com/summersailstice" target="_blank"><img src="/<?php echo $directory ?>/images/icon_fb.png" alt="FB" title="Follow us on Facebook"></a></div>
+        <div class="item"><a href="http://twitter.com/summersailstice" target="_blank"><img src="/<?php echo $directory ?>/images/icon_twitter.png" alt="Twitter" title="Follow us on Twitter"></a></div>
+      </div>
+    </div>
   </div>
 </div>
 

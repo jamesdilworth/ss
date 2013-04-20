@@ -1,7 +1,5 @@
 <?php
 
-ECHO "Test";
-
 /**
  * @file
  * Drupal site-specific configuration file.
