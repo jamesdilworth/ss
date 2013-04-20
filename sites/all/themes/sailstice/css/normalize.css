@@ -237,7 +237,7 @@ h2 {
   color:#266986;
   font-size: 1.5em;
   font-weight:normal;
-  line-height: 2em; /* 3rem / 1.5em = 2em */
+  line-height: 1.5em; /* 3rem / 1.5em = 2em */
   margin-top: 1em; /* 1.5rem / 1.5em = 1em */
   margin-bottom: 1em;
 }

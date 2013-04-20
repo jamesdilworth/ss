@@ -105,7 +105,7 @@
       </div>
 
       <div id="logo"><a href="<?php echo $front_page ?>"><img src="/<?php echo $directory ?>/images/boat_logo.png"></a></div>
-      <div id="social">
+      <div class="social">
         <div class="item"><a href="http://www.facebook.com/summersailstice" target="_blank"><img src="/<?php echo $directory ?>/images/icon_fb.png" alt="FB" title="Follow us on Facebook"></a></div>
         <div class="item"><a href="http://twitter.com/summersailstice" target="_blank"><img src="/<?php echo $directory ?>/images/icon_twitter.png" alt="Twitter" title="Follow us on Twitter"></a></div>
       </div>
