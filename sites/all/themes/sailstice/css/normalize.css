@@ -246,8 +246,7 @@ h3 {
   color:#266986;
   font-size: 1.17em;
   line-height: 1.282em; /* 1.5rem / 1.17em = 1.282em */
-  margin-top: 1.282em;
-  margin-bottom: 1.282em;
+  margin: 0px;
 }
 
 h4 {

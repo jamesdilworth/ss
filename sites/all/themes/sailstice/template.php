@@ -225,6 +225,12 @@ function sailstice_preprocess_block(&$variables, $hook) {
 }
 // */
 
+function sailstice_preprocess_user_profile(&$variables) {
+  dpm($variables);
+  $variables['user_profile']['field_boat_type_textonly']['#title'] = "I sail a";
+  // print "Hello world!";
+}
+
 
 /**
  * Custom template files for user login and registration pages
