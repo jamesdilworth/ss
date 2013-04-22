@@ -1,0 +1,53 @@
+<?php
+/**
+ * Implements hook_node_insert().
+ */
+
+function sailstice_auto_add_node_insert($node) {
+  $nid = $node->nid;
+  $type = $node->type;
+
+  // only process project node
+  if ($type != 'hero') {
+    return FALSE;
+  }
+  // I've only one nodequeue where a specific node type should always be
+  // added so this is taken from the mysql nodequeue_queue table
+  $queue_id = 1;
+
+  // subqueue id, exists even if we created a really basic nodequeue (from nodequeue_subqueue table)
+  $sqid = 1;
+  $queue = nodequeue_load($queue_id);
+  $subqueue = nodequeue_load_subqueue($sqid);
+
+  if (function_exists('views_invalidate_cache')) {
+    views_invalidate_cache();
+  }
+
+  nodequeue_subqueue_add($queue, $subqueue, $nid);
+}
+
+/**
+ * Implements hook_node_delete().
+ */
+function nodequeue_auto_add_node_delete($node) {
+  $nid = $node->nid;
+  $type = $node->type;
+  // only process project node
+  if ($type != 'hero') {
+    return FALSE;
+  }
+
+  if (function_exists('views_invalidate_cache')) {
+    views_invalidate_cache();
+  }
+
+  // I've only one nodequeue where a specific node type should always be
+  // added so this is taken from the mysql nodequeue_queue table
+  $queue_id = 1;
+
+  // subqueue id, exists even if we created a really basic nodequeue (from nodequeue_subqueue table)
+  $sqid = 1;
+
+  nodequeue_subqueue_remove_node($sqid, $nid);
+}

@@ -9,7 +9,7 @@
 #overlay                { z-index:100; }
 
 /* Used in views to enable quick editing of content */
-.edit-link a            { color:#c00; }
+.edit-link a            { color:#c00; font-size:90%; }
 
 
 #main-nav               { background-color:#1d80ab; color:#fff; padding:10px 20px 10px;  -webkit-box-shadow:0px 0px 8px #0b3e54; box-shadow:0px 0px 8px #0b3e54;  border-bottom:1px solid #00738a; }
@@ -125,8 +125,9 @@
 .event-page             {}
 .event-page .date-time  { font-size:120%; border-radius:5px; }
 
-.view-registrations .user  { clear:both; padding }
-.view-registrations .photo  { float:left; max-height:60px; margin-right:10px;  }
+/* Event Page - Sidebar for viewing the registrations */
+.view-registrations .user       { clear:both; padding-left:70px; margin-bottom:10px;}
+.view-registrations .photo      { float:left; margin-left:-70px; max-height:60px; margin-right:10px;  }
 .view-registrations .photo img  { max-width:60px;  }
 
 /* User Profile Page */

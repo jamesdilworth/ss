@@ -1,0 +1,7 @@
+name = Sailstice auto add/remove
+description = Automatically adds and remove nodes when they are created and deleted.
+core = 7.x
+version = 7.x-dev
+package = Nodequeue
+
+dependencies[] = nodequeue

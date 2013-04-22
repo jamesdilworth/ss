@@ -93,10 +93,8 @@ scripts[] = js/jquery.orbit.min.js
 ;   <?php print $header_top; ?>
 
 regions[site_banner]    = Site Banner
-regions[help]           = Help
 regions[content]        = Content
 regions[sidebar_first]  = First sidebar
-regions[sidebar_second] = Second sidebar
 regions[footer_1]         = Footer 1
 regions[footer_2]         = Footer 2
 regions[footer_right]     = Footer right
