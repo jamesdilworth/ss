@@ -3841,7 +3841,7 @@ function user_register_submit($form, &$form_state) {
     _user_mail_notify('register_no_approval_required', $account);
     $form_state['uid'] = $account->uid;
     user_login_submit(array(), $form_state);
-    drupal_set_message(t('Registration successful. You are now logged in.'));
+    drupal_set_message(t('Registration successful. You are now able to sign up for contests, events and win prizes!.'));
     $form_state['redirect'] = '';
   }
   // No administrator approval required.
