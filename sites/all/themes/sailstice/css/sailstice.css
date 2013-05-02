@@ -92,6 +92,13 @@
 .region-site-banner         { position:relative; margin:0px; background-color:rgba(253,190,0,1); color:#fff; text-shadow:0 0 2px #330; padding:10px 20px 10px; font-size:160%; text-transform:uppercase; font-weight:bold; text-align:center; text-transform:uppercase; }
 .region-site-banner .block  { margin-bottom:0px; }
 
+/* Sailing Plans Registration */
+.registrant             { padding-left:120px; position:relative; margin-bottom:20px; margin-left:20px;  }
+.registrant .picture    { width:100px; margin-left:-120px; float:left; }
+.registrant .name       {}
+.registrant .location   { font-size:85%; color:#999;}
+.registrant .edit-link  { position:absolute; right:0px; top:0px; }
+
 
 /* Event cards are used on the events page */
 .event-card             { display:inline-block; width:250px; background-color:#f9f9f9; padding:10px; margin:0px 15px 15px 0px; box-shadow:0px 0px 5px #ccc; vertical-align:top; }
