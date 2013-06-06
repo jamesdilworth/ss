@@ -179,7 +179,7 @@ body {
  */
 
 a:link      { color:#008aaf; text-decoration:none; }
-a:visited   { color:#166486; text-decoration:none; }
+a:visited   { color:#008aaf; text-decoration:none; }
 a:hover,
 a:focus     { text-decoration:underline; }
 a:active    { }

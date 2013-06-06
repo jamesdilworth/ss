@@ -63,7 +63,9 @@
 <script>
   (function ($) {
     jQuery('.home-hero .view-content').orbit({
-      timer:false
+      timer: true,
+      advanceSpeed: 8000,
+      pauseOnHover: true
     });
   })(jQuery);
 </script>
