@@ -210,6 +210,7 @@
 /* Tabular Styles for Reports */
 
 .views-table 			{ width:100%; }
+.views-table caption	{ font-size:125%; margin:10px 0px; text-align:left; }
 .views-table td 		{ padding:2px 5px; }
 .views-table th			{ padding:2px 5px; background-color:#e2e2e2; border:1px solid #ccc; }
 .views-table .odd 		{ background-color:#f6f6f6; }
