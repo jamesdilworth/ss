@@ -211,6 +211,6 @@
 
 .views-table 			{ width:100%; }
 .views-table td 		{ padding:2px 5px; }
-.views-table th			{ background-color:e2e2e2; border:1px solid #ccc; }
-.views-table .odd tr 	{ background-color:#f6f6f6; }
-.views-table .even tr 	{ background-color:#fff; }
+.views-table th			{ padding:2px 5px; background-color:#e2e2e2; border:1px solid #ccc; }
+.views-table .odd 		{ background-color:#f6f6f6; }
+.views-table .even 		{ background-color:#fff; }
