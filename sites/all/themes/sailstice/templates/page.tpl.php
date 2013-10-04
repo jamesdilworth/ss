@@ -110,7 +110,7 @@
         <div class="item"><a href="http://twitter.com/summersailstice" target="_blank"><img src="/<?php echo $directory ?>/images/icon_twitter.png" alt="Twitter" title="Follow us on Twitter"></a></div>
       </div>
       <div id="site_name">Summer<br>SAILstice</div>
-      <div id="season_date">Saturday, June 22nd 2013</div>
+      <div id="season_date">Saturday, June 21st 2014</div>
       <div id="tagline_or_slogan">
           <div id="slogan">Celebrate Sailing!</div>
           <div id="countdown"></div>
