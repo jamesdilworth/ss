@@ -49,8 +49,8 @@
     <?php if (isset($latitude) && isset($longitude)): ?>
       <?php // Assume that 0, 0 is invalid. ?>
       <?php if ($latitude != 0 || $longitude != 0): ?>
-        <span class="geo"><abbr class="latitude" title="<?php print $latitude; ?>"><?php print $latitude_dms; ?></abbr>, <abbr
-            class="longitude" title="<?php print $longitude; ?>"><?php print $longitude_dms; ?></abbr></span>
+        <span class="geo"><abbr class="latitude" title="<?php print $latitude; ?>"><?php print $latitude; ?></abbr>, <abbr
+            class="longitude" title="<?php print $longitude; ?>"><?php print $longitude; ?></abbr></span>
       <?php endif; ?>
     <?php endif; ?>
   </div>
