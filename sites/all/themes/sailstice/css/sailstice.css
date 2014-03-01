@@ -179,8 +179,16 @@ h1+h2           { font-family: helvetica, sans-serif; color:#666; margin-top:-15
 .sailtice_notes         { display:none; }
 
 /* Season Logos - Featured on the home page */
-.season-logos .view-content     { text-align:center; }
-.season-logos .view-content>div { display:inline-block; margin:5px;  }
+
+.view-season-sponsors .view-content     { text-align:center; }
+.view-season-sponsors .view-content>div { display:inline-block; margin:5px;  }
+
+.pane-season-sponsors-gold-sponsors h2,
+.pane-season-sponsors-silver-sponsors h2,
+.pane-season-sponsors-bronze-sponsors h2  { color:#ccc; font-family:Helvetica, Arial, sans-serif; text-transform:uppercase; font-size:95%; font-weight:normal; text-align:center; margin:20px 0px 5px;  }
+
+.pane-season-sponsors-silver-sponsors img { max-width:125px; }
+.pane-season-sponsors-bronze-sponsors .views-field { margin:10px 15px;}
 
 
 /* Normal btns from Foundation ---------------------- */
